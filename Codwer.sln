@@ -1,25 +1,61 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32901.82
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codwer", "Codwer.csproj", "{C4AF1C8D-951B-4D5F-BB4E-3D3D1364FC94}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4AF1C8D-951B-4D5F-BB4E-3D3D1364FC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4AF1C8D-951B-4D5F-BB4E-3D3D1364FC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4AF1C8D-951B-4D5F-BB4E-3D3D1364FC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4AF1C8D-951B-4D5F-BB4E-3D3D1364FC94}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2EDD3422-6EB5-457E-8C69-A5D046217727}
-	EndGlobalSection
-EndGlobal
+using System;
+//Exercitiu 2
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Introdu o listă de numere: ");
+        string input = Console.ReadLine();
+        string[] numbersAsString = input.Split(' ');
+
+        double[] numbers = new double[numbersAsString.Length];
+
+        // Conversia și salvarea numerelor în array
+        for (int i = 0; i < numbersAsString.Length; i++)
+        {
+            if (double.TryParse(numbersAsString[i], out double num))
+            {
+                numbers[i] = num;
+            }
+            else
+            {
+                Console.WriteLine($"Elementul '{numbersAsString[i]}' este număr nevalid.");
+            }
+        }
+
+        Console.WriteLine("Numere ce nu sunt întregi:");
+
+        // Afișarea numerelor care nu sunt întregi
+        foreach (var num in numbers)
+        {
+            if (!IsInteger(num))
+            {
+                Console.WriteLine(num);
+            }
+        }
+
+        // Cautarea și afișarea celui mai mic număr
+        double smallestNumber = FindSmallestNumber(numbers);
+        Console.WriteLine($"Cel mai mic număr este: {smallestNumber}");
+    }
+
+    static bool IsInteger(double num)
+    {
+        return num == Math.Floor(num);
+    }
+
+    static double FindSmallestNumber(double[] numbers)
+    {
+        double smallest = double.MaxValue;
+
+        foreach (var num in numbers)
+        {
+            if (num < smallest)
+            {
+                smallest = num;
+            }
+        }
+
+        return smallest;
+    }
+}
