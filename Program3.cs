@@ -14,9 +14,9 @@ class Program
         Console.Write("Introdu al treilea nume: ");
         string thirdName = Console.ReadLine();
 
-        Console.WriteLine("Caracterele și numărul de apariții în fiecare nume:");
+        Console.WriteLine("Caracterele si numărul de apariții în fiecare nume:");
 
-        // Afișarea caracterelor și numărul de apariții în fiecare nume
+        // Afișarea caracterelor si numărul de apariții în fiecare nume
         DisplayCharacterCounts(firstName, secondName, thirdName);
     }
 
