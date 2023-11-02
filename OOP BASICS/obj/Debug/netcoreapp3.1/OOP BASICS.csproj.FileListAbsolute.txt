@@ -1,0 +1,13 @@
+C:\Users\Asus\source\repos\OOP BASICS\bin\Debug\netcoreapp3.1\OOP BASICS.exe
+C:\Users\Asus\source\repos\OOP BASICS\bin\Debug\netcoreapp3.1\OOP BASICS.deps.json
+C:\Users\Asus\source\repos\OOP BASICS\bin\Debug\netcoreapp3.1\OOP BASICS.runtimeconfig.json
+C:\Users\Asus\source\repos\OOP BASICS\bin\Debug\netcoreapp3.1\OOP BASICS.runtimeconfig.dev.json
+C:\Users\Asus\source\repos\OOP BASICS\bin\Debug\netcoreapp3.1\OOP BASICS.dll
+C:\Users\Asus\source\repos\OOP BASICS\bin\Debug\netcoreapp3.1\OOP BASICS.pdb
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.AssemblyInfo.cs
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.dll
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.pdb
+C:\Users\Asus\source\repos\OOP BASICS\obj\Debug\netcoreapp3.1\OOP BASICS.genruntimeconfig.cache
